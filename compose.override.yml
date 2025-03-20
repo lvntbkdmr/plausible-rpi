@@ -1,0 +1,10 @@
+services:
+  plausible:
+    ports:
+      - 80:80
+      - 443:443
+
+  plausible_events_db:
+    build: clickhouse
+    image: null
+
